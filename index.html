@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/normalize.css"> <!--For Reset Layout -->
+    <link rel="stylesheet" href="css/style.css"/> <!--To Customize Styling -->
+    <title>Piano Flex</title>
+</head>
+<body>
+<!-- Start Header -->
+    <header id="header">
+        <div class="container">
+           <nav>
+            <span class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <img src="images/Logo.png" alt="" id="main-logo">
+            <ul class="nav-bar">
+                
+                <li><a href="#header">Home</a></li>
+                <li><a href="#metro">Metronome</a></li>
+                <li><a href="#pia">Piano</a></li>
+                <li><a href="#about"> About</a></li>
+            </ul>
+
+           </nav>
+            
+        
+            <span class="saying">
+            <p id="saying">'' Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife ''</p>
+            <p id="author">Kahlil Gibran</p>
+                <img src="images/bg.png" id="myVideo" alt="">
+            </span>
+        </div>  
+    </header>
+
+   
+<!-- End Header -->
+
+
+
+<!-- Start Section Learn -->
+    <section class="learn">
+        <div class="container">
+            <h3 class="title-section">How To Learn Piano</h3>
+            <div class="how">
+                <div class="keys">
+                    <img src="images/learn-one.jpg" alt="">
+                    <h4>Learn Keys</h4>
+                </div>
+                <div class="timing">
+                    <img src="images/learn-two.jpg" alt="">
+                    <h4>Learn Timing</h4>
+                </div>
+                <div class="ear">
+                    <img src="images/learn-three.jpg" alt="">
+                    <h4>Train Your Ear</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End Section Learn -->
+
+
+
+<!-- Start Section Testimonials -->
+<section class="testimonials">
+    <h3 class="title-section">Testimonials</h3>
+    <div class="container">
+        <div class="clients">
+            <div class="anya">
+                <img src="images/anya-john.jpg" alt="">
+                <h4>Anya John</h4>
+                <p>Music is the only language 
+                    in which you cannot say 
+                    a mean or sarcastic thing.</p>
+            </div>
+            <div class="john">
+                <img src="images/john-doe.jpg" alt="">
+                <h4>John Doe</h4>
+                <p>Music is the moonlight in 
+                    the gloomy night of life.</p>
+            </div>
+            <div class="sara">
+                <img src="images/Sara-marley.jpg" alt="">
+                <h4>Sara Marley</h4>
+                <p>Music is the universal 
+                    language of mankind.</p>
+            </div>
+        </div>  
+</div>
+</section>
+<!-- End Section Testimonials -->
+
+
+
+
+
+
+
+ <!-- Start Metronome -->
+    <div class="metronome" id="metro">
+        <div class="container">
+            <h3 class="title-section">Metronome</h3>
+            <h5>What Is Metronome ?</h5>
+            <p>A great instrumentalist can perform a piece of music at a wide 
+                variety of tempos. To truly control her instrument, she must be
+                able to playa passage just as compellingly at rapid speed as she
+                 might at a languid speed, and vice versa.</p>
+        </div>
+        <div class="virtual-metronome">
+            <span class="bpm">
+                <span class="decrease">-</span>
+                <span class="number">60</span>
+                <span class="increase">+</span>
+            </span>
+            <p>BPM</p>
+            <audio id="tick">    
+                <source src="images/tick.mp3" type="audio/mpeg">
+              </audio>
+            <button class="play flex-center">
+                <i class="fas fa-play"></i></button>
+        </div>
+    </div>
+
+ <!-- End Metronome -->
+
+
+
+ <!-- Start Virtual Piano -->
+    <Section class="piano" id="pia">
+        <div class="container">
+            <h3 class="title-section">Virtual Piano</h3>
+            <div class="virtual-piano">
+                <div class="do" data-note="do">
+                    <audio id="do">    
+                        <source src="piano sound/C4.mp3" type="audio/mpeg">
+                      </audio>
+                    <div class="do-sharp" data-note="do-sharp">
+                        <audio id="do-sharp">    
+                            <source src="piano sound/Db4.mp3" type="audio/mpeg">
+                          </audio>
+                    </div>
+                    
+                </div>
+                
+                <div class="re" data-note="re">
+                    <audio  id="re">    
+                        <source src="piano sound/D4.mp3" type="audio/mpeg">
+                      </audio>
+                    <div class="re-sharp" data-note="re-sharp">
+                        <audio id="re-sharp">    
+                            <source src="piano sound/Eb4.mp3" type="audio/mpeg">
+                          </audio>
+                    </div>
+                </div>
+                
+                <div class="mi" data-note="mi">
+                    <audio id="mi">    
+                        <source src="piano sound/E4.mp3" type="audio/mpeg">
+                      </audio>
+                </div>
+                <div class="fa"  data-note="fa">
+                    <audio id="fa">    
+                        <source src="piano sound/F4.mp3" type="audio/mpeg">
+                      </audio>
+                    <div class="fa-sharp" data-note="fa-sharp">
+                        <audio id="fa-sharp">    
+                            <source src="piano sound/Gb4.mp3" type="audio/mpeg">
+                          </audio>
+                    </div>
+                </div>
+               
+                <div class="sol" data-note="sol">
+                    <audio  id="sol">    
+                        <source src="piano sound/G4.mp3" type="audio/mpeg">
+                      </audio>
+                    <div class="sol-sharp" data-note="sol-sharp">
+                        <audio id="sol-sharp">    
+                            <source src="piano sound/Ab4.mp3" type="audio/mpeg">
+                          </audio>
+                    </div>
+                </div>
+                <div class="la" data-note="la">
+                    <audio id="la">    
+                        <source src="piano sound/A4.mp3" type="audio/mpeg">
+                      </audio>
+                    <div class="la-sharp" data-note="la-sharp">
+                        <audio id="la-sharp">    
+                            <source src="piano sound/Bb4.mp3" type="audio/mpeg">
+                          </audio>
+                    </div>
+                </div>
+                <div class="si" data-note="si">
+                    <audio id="si">    
+                        <source src="piano sound/B4.mp3" type="audio/mpeg">
+                      </audio>
+                </div>
+                <div class="do-two" data-note="do-two">
+                    <audio  id="do-two">    
+                        <source src="piano sound/C5.mp3" type="audio/mpeg">
+                      </audio>
+                    <div class="do-sharp-two" data-note="do-sharp-two">
+                        <audio  id="do-sharp-two">    
+                            <source src="piano sound/Db5.mp3" type="audio/mpeg">
+                          </audio>
+
+                    </div>
+                </div>
+                <div class="re-two" data-note="re-two">
+                    <audio  id="re-two">    
+                        <source src="piano sound/D5.mp3" type="audio/mpeg">
+                      </audio>
+                    <div class="re-sharp-two" data-note="re-sharp-two">
+                        <audio  id="re-sharp-two">    
+                            <source src="piano sound/Eb5.mp3" type="audio/mpeg">
+                          </audio>
+                    </div>
+                </div>
+                <div class="mi-two" data-note="mi-two">
+                    <audio  id="mi-two">    
+                        <source src="piano sound/E5.mp3" type="audio/mpeg">
+                      </audio>
+                </div>
+            </div>
+            <ul>
+                <li>C = Do</li>
+                <li>E = Ré</li>
+                <li>G = Sol</li>
+                <li>B = Si</li>
+                <li>D = Ré</li>
+                <li>F = Mi</li>
+                <li>A = La</li>
+            </ul>
+        </div>
+    </Section>
+ <!-- End Virtual Piano -->
+
+
+ <!-- Start Chords -->
+    <div class="chord">
+
+        <div class="container">
+            <h3 class="title-section">Piano Chords</h3>
+            <h5>What is Chord ?</h5>
+            <p>chord, in music, three or more single pitches heard simultaneously.
+                Depending on the harmonic style, chords may be consonant, implying repose, 
+                or dissonant, implying subsequent resolution to and by another chord.</p>
+            <span class="common-chords">
+                <span class="major">
+                    <p>Common major piano chords include:</p>
+                    <span>
+                        <ol>
+                            <li> C Major (C). C - E - G</li>
+                            <li>C# Major (C#). C# - E# - G#</li>
+                            <li>D Major (D). D - F# - A</li>
+                            <li>Eb Major (Eb). Eb - G - Bb</li>
+                            <li>E Major (E). E - G# - B</li>
+                            <li>F Major (F). F - A - C</li>
+                        </ol>
+                        <ol start="7">
+                            <li>F# Major (F#). F# - A# - C#</li>
+                            <li>G Major (G). G - B - D</li>
+                            <li>Ab Major (Ab). Ab - C - Eb</li>
+                            <li>A Major (A). A - C# - E</li>
+                            <li>Bb Major (Bb). Bb - D - F</li>
+                            <li>B Major (B). B - D# - F#</li>
+                        </ol>
+                    </span>
+                </span>
+                <span class="minor">
+                   
+                    <p>Common minor piano chords include:</p>
+                    <span>
+                    <ol>
+                        <li>C minor (Cm). C - Eb - G</li>
+                        <li>C# minor (C#m). C# - E - G#</li>
+                        <li>D minor (Dm). D - F -A</li>
+                        <li>Eb minor (Ebm). Eb - Gb - Bb</li>
+                        <li>E minor (Em). E - G - B</li>
+                        <li>F minor (Fm). F - Ab - C</li>
+                    </ol>
+                    <ol start="7">
+                        <li>F# minor (F#m). F# - A - C#</li>
+                        <li>G minor (Gm). G - Bb - D</li>
+                        <li>Ab minor (Abm). Ab - Cb - Eb</li>
+                        <li>A minor (Am). A - C - E</li>
+                        <li>Bb minor (Bbm). Bb - Db - F</li>
+                        <li>B minor (Bm). B - D - F#</li>
+                    </ol>
+                </span>
+                </span>
+                </span>
+            </span>
+
+        </div>
+ <!-- End Chords -->
+
+
+<!-- Start Contact Us -->
+<div class="contact-us">
+    <div class="container">
+        <h3 class="title-section">Contact Us</h3>
+        <form action="GET">
+            <input type="text" name="" id="name" placeholder="Enter your full name" required/>
+            <input type="email" id="email" placeholder="Enter your email"/>
+            <input type="text" name="" id="phone" placeholder="Enter your phone number"/>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <button id="send">Submit</button>
+
+
+        </form>
+    </div>
+
+
+
+
+</div>
+
+
+
+<!-- End Contact Us -->
+
+
+
+
+<!-- Start About Us  -->
+<div class="about" id="about">
+    <div class="container">
+        <h3 class="title-section">About Us</h3>
+        <p class="info">Flex Piano is an American musical instrument company based 
+            in Buffalo Grove,  Illinois, United States, a suburb of Chicago,
+            that manufactures and distributes products worldwide. 
+            The company is currently a subsidiary of Canadian corporate 
+            group Jam Industries.</p>
+        <p><i class="fas fa-map-marker-alt"></i><b>Position:</b>  32 Street John Wick , NY , United State</p>
+        <p><i class="fas fa-phone-alt"></i><b>Phone Number</b> : +1 554-345-654</p>
+    </div>
+
+</div>
+
+
+
+
+<!-- End About Us  -->
+
+
+
+
+<!-- Start Footer -->
+<Footer>
+    <div class="container">
+        <span class="items">
+            <img src="images/Logo.png" alt=""/>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#metro">Metronome</a></li>
+                <li><a href="#pia">Piano</a></li>
+                <li><a href="#about"> About</a></li>
+            </ul>
+        </span>
+        <span class="social-media">
+            <p>Follow me on :</p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-tiktok"></i>
+        </span>
+        <p class="copyright">Copyright &copy; 2021 By Piano Flex</p>
+    </div>
+
+
+
+    
+</Footer>
+<div class="default">
+    <span class="circle">
+        <i class="fas fa-check"></i>
+    </span>
+    <h5>Great!</h5>
+    <p>Your Message succesfully Send</p>
+    <button class="exit">Close</button>
+</div>
+<!-- End Footer -->
+<span class="copyied"><pas>Text Has Copied Successfuly</p></span>  <!--If User Copy A Text-->
+<script src="js/app.js"></script>   <!-- For Interactive Site -->
+</body>
+</html>

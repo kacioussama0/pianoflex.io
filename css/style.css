@@ -1,0 +1,1104 @@
+/* Start Global Rules */
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #1E1E1E;
+    --second-color: #fff;
+}
+@font-face {        /* Font Of This Design */
+    font-family: 'Arslan';
+    src: url(../fonts/Arslan.ttf);
+    font-style: normal;
+    font-weight: 400;
+    
+
+}
+@font-face {
+    font-family: 'Bukra regular';
+    src: url(../fonts/29ltbukraregular.ttf);
+    font-weight: 400;
+}
+* {
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    
+}
+div.container {
+    
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.default {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: #2F2F2F;
+    transform: translate(-50% , -50%);
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.default {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: #2F2F2F;
+    transform: translate(-50% , -50%);
+    border-radius: 5px;
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+}
+div.default span.circle {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid green;
+
+}
+div.default  span.circle i {
+color: green;
+font-size: 60px;
+}
+div.default  h5 {
+  font-family: 'cairo';
+    font-size: 25px;
+    margin: 20px;
+    
+}
+div.default  p {
+    font-family: 'cairo';
+    margin-top:0;  
+}
+button.exit {
+    display: block;
+    width: 100px;
+    height: 40px;
+    font-family: 'cairo';
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(227,116,126);
+    color: #fff;
+    margin-top: 15Px;
+}
+button.exit:hover {
+
+    background-color: rgb(210,116,120);
+    
+}
+/* End Global Rules */
+
+
+
+/* Start Header */
+header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+header div.container nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+header div.container #main-logo {
+    width: 150px;
+    margin-right: auto;
+    align-self: center;
+  
+}
+header div.container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header div.container ul li {
+    list-style: none;
+    margin-left: 25px;
+    margin-right: 30px;
+    font-size: 30px;
+    letter-spacing: -5px;
+    font-family: '29LT Bukra';
+    cursor: pointer;
+    transition: 0.6s;
+    position: relative;
+    user-select: none;
+    
+}
+header div.container ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+header div.container ul li::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -10px;
+    transition: 0.6s;
+   
+}
+header div.container ul li:hover::before {
+    background-color: #5720C9;
+}
+
+header div.container span.saying p:first-child {
+    width: fit-content;
+    margin: 150px auto 50px auto;  
+    font-size: 50px;
+    font-family: 'Arslan';
+    text-align: center;
+    transition: 0.5s;
+}
+header div.container span.saying p:nth-child(2) {
+    width: fit-content;
+    font-family: 'Bukra regular';
+    margin: 5px auto;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    transition: 0.5s;
+}
+header div.container span.saying p:nth-child(2)::before {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: var(--second-color);
+    position: absolute;
+    top: 15px;
+    left: -60px;
+    
+    
+}
+header div.container span.saying p:nth-child(2)::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: var(--second-color);
+    position: absolute;
+    top: 15px;
+    right: -60px;
+    
+}
+#myVideo {
+    
+  
+    opacity: 0.15;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* End Header */
+#first-image , #second-image , #third-image{
+    margin: 150px auto;
+    height: 10% !important;
+    width: 100%;
+    display: block;
+    opacity: 0.4;
+    display: none;
+}
+
+/* Start Section Learn */
+section.learn  {
+    margin-top: 80px;
+}
+section.learn div.container div.how {
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+section.learn div.container div.how div {
+    width: calc((100% - 50px) / 3);
+    height: 500px;
+    background-color: #262626;
+    padding: 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+section.learn div.container div.how div img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius:  15px 15px 0 0;
+    transition: 1s;
+}
+section.learn div.container div.how div:hover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:  15px;
+    
+}
+section.learn div.container div.how h4 {
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'cairo',sans-serif;
+    font-weight: bold;
+}
+section.learn div.container div.how div:hover h4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:  15px;
+    display: none;
+    
+}
+/* End Section Learn */
+
+
+/* Start Section Testimonials */
+section.testimonials div.container div.clients {
+    display: flex;
+    margin: 100px auto;
+    justify-content: space-between;
+    
+}
+section.testimonials div.container div.clients div{
+    width: calc((100% - 50px) / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section.testimonials div.container div.clients div img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid var(--second-color);
+
+}
+section.testimonials div.container div.clients div h4{
+    font-size: 30px;
+    font-family: 'cairo',sans-serif;
+    
+}
+section.testimonials div.container div.clients div p{
+    text-align: center;
+    font-family: 'cairo',sans-serif;
+    margin: 0px auto;
+    width: 60%;
+    
+}
+
+/* End Section Testimonials */
+
+/* Start Metronome */
+div.metronome {
+    font-family: 'cairo' , sans-serif;
+}
+div.metronome div.container h5 {
+    font-size: 25px;
+}
+div.metronome div.container p {
+    margin: 50px auto;
+    font-size: 20px;
+    line-height: 1.6;
+}
+ div.virtual-metronome {
+    width: 40%;
+    height: 800px;
+    margin : 15px auto;
+    background-color: #2F2F2F;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* box-shadow: rgba(255, 255, 255,0.3) 0 1px 10px 0; */
+}
+div.virtual-metronome span.bpm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    font-size: 100px;
+    user-select: none;
+    
+}
+div.virtual-metronome span.bpm span {
+    margin-left: 30px;
+}
+div.virtual-metronome p {
+    font-size: 50px;
+    margin: -50px auto;
+   }
+   
+div.virtual-metronome button {
+ width: 300px;
+ height: 300px;
+ border: none;
+ border-radius: 50%;
+ background-color: rgba(255,255,255,0.4);
+}
+div.virtual-metronome {
+    width: 40%;
+}
+
+div.virtual-metronome button i{
+    font-size: 100px;
+    cursor: pointer;
+   }
+/* End Metronome */
+
+
+/* Start Piano  */
+section.piano {
+   
+}
+section.piano div.container h3 {
+    margin: 150px auto;
+}
+section.piano div.container div.virtual-piano {
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    padding:0;
+   
+}
+
+section.piano div.container div.virtual-piano div{
+    width: calc(100% / 10);
+    border-left: 1px solid var(--main-color);
+    font-family: 'cairo',sans-serif;
+}
+div.re , div.do , div.fa , div.sol , div.la ,div.do-two , div.re-two{
+    position: relative;
+    cursor: pointer;
+}
+
+div.do-sharp , div.re-sharp , div.fa-sharp , div.sol-sharp , div.la-sharp , div.re-sharp-two , div.do-sharp-two{
+    position: absolute;
+    background-color: #000;
+    width: 40px !important;
+    height: 200px;
+    border:none !important;
+    left: 70%;
+    z-index: 2;
+
+}
+div.do-sharp:hover , div.re-sharp:hover , div.fa-sharp:hover , div.sol-sharp:hover , div.la-sharp:hover{
+    background-image: linear-gradient(to bottom, #000 30% , rgba(255,255,255,0.5));
+
+}
+section.piano div.container ul {
+    display: flex;
+    align-items: center;
+}
+section.piano div.container ul li {
+    list-style: none;
+    
+    font-family: 'cairo' , sans-serif;
+    font-size: 40px;
+    width: fit-content;
+    margin: 50px auto;
+}
+/* End Piano */
+
+/* Start Chords */
+div.chord div.container {
+    font-family: 'cairo',sans-serif;
+}
+div.chord div.container h3 {
+    margin: 150px auto;
+}
+
+div.chord div.container h5 {
+    font-size: 25px;
+    text-align: center;
+}
+div.chord div.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+ 
+}
+div.chord div.container span.common-chords {
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+div.chord div.container span.common-chords span.major span , div.chord div.container span.common-chords span.minor span {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+}
+div.chord div.container span.common-chords span.major p ,div.chord div.container span.common-chords span.minor p {
+    font-weight: bold;
+    font-size: 25px;
+}
+div.chord div.container span.common-chords span.major span ol li , div.chord div.container span.common-chords span.minor span ol li  {
+    line-height: 1.6;
+}
+div.chord div.container span.common-chords span.major span ol  , div.chord div.container span.common-chords span.minor span ol   {
+    list-style-type: decimal-leading-zero;
+}
+
+/* End Chords */
+
+
+/* Start Contact Us */
+div.contact-us {
+    height: 800px;
+}
+div.contact-us div.container form {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -50Px;
+    background-color: #2F2F2F;
+    margin-left:  auto;
+    margin-right:  auto;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+div.contact-us div.container input {
+    width: 500px;
+    height: 60px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 15px auto;
+    
+}
+div.contact-us div.container input:focus {
+    outline: none;
+}
+div.contact-us div.container input::placeholder {
+    color: var(--main-color);
+}
+div.contact-us div.container textarea {
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+    margin: 15px auto;
+    resize: none;
+}
+div.contact-us div.container textarea:focus {
+    outline: none;
+}
+div.contact-us div.container button {
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px auto;
+    border:none;
+    background-color: #5720C9;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 1px 0 5px 0 #5720C9;
+    cursor: pointer;
+    transition: 0.6s;
+}
+div.contact-us div.container button:hover {
+    background-color:  #471aa0;
+}
+/* End Contact Us */
+
+/* Start About Us */
+div.about div.container p.info {
+    font-size: 25px !important;
+}
+div.about div.container h3 {
+    margin: 150px auto 40px auto;
+}
+
+
+
+
+
+
+/* End About Us */
+
+
+/* Start Footer */
+
+
+
+/* End Footer */
+footer {
+    margin-top : 80px;
+    width: 100%;
+    height: 400px;
+    background-color: #262626;
+    border-radius: 80px 80px 0 0;
+    border: 2px solid var(--second-color);
+    border-bottom-color: transparent;
+    padding-top : 40px;
+    
+   
+}
+footer div.container img {
+    width: 150px;
+    display: block;
+   
+}
+footer div.container span.items {
+    width: 150px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer div.container span.items ul {
+    display: flex;
+    flex-direction: column;
+    align-items:    ce;
+    justify-content: center;
+    margin: 15px auto;
+    transition: 0.6s;
+}
+footer div.container span.items ul li {
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+footer div.container span.items ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+footer div.container span.items ul li:hover {
+    list-style: none;
+    width: fit-content;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+   
+}
+
+footer span.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto !important;
+}
+footer span.social-media i {
+    font-size: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+footer span.social-media i:hover {
+    color: #ddd;
+}
+p.copyright {
+    text-align: center;
+    font-size: 22px !important;
+}
+
+
+div.chord div.container p i {
+    margin-right: 10px;
+}
+
+
+
+span.copyied {
+    width: 300px;
+    height: 50px;
+    background-color: #262626;
+    position: fixed;
+    right: 50px;
+    bottom: 15px;
+    border-radius: 5px;
+    font-family: 'cairo' ,sans-serif;
+    transition: 0.6s;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5Px;
+    display: flex;
+    align-items:center;
+    display: none;
+   
+}
+span.copyied p {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+span.copyied p::after {
+    content: "";
+    background-color: #5720c9;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -15px;
+    left: -1px;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes slide {
+    to {
+        width: 160%;
+    }
+}
+
+
+
+/* Start Mediaquery */
+
+/* For Mobile */
+@media (max-width: 767px) {
+    #myVideo {
+        display: none;
+    }
+    div.container {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section.learn div.container div.how {
+        flex-direction: column;
+    }
+    section.learn div.container div.how div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    section.testimonials div.container div.clients {
+        flex-direction: column;
+    }
+    section.testimonials div.container div.clients div {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    div.virtual-metronome {
+
+    }
+    div.virtual-metronome span.bpm {
+        font-size: 50px;
+        
+    }
+    div.virtual-metronome button {
+        width: 150px;
+        height: 150px;
+    }
+    div.virtual-metronome button i {
+       font-size: 50px;
+    }
+    section.piano div.container ul li{
+      margin-bottom: 5px;
+    }
+    section.piano div.container ul {
+        flex-direction: column;
+    }
+    section.piano div.container div.virtual-piano   {
+        width: 100%;
+        margin: 15px auto;
+   
+ 
+    }
+    section.piano div.container div.virtual-piano div div {
+        position: absolute;
+        width: 60% !important;
+   
+ 
+    }
+    header div.container ul li a {
+        color: #262626;
+    }
+    div.chord div.container span.common-chords span.major p, div.chord div.container span.common-chords span.minor p {
+        font-size: 18px;
+    }
+    section.piano div.container ul li {
+        font-size: 25px;
+        text-align: center;
+    }
+    div.chord div.container span.common-chords span.major span, div.chord div.container span.common-chords span.minor span {
+        font-size: 18px;
+    }
+    div.about div.container p.info {
+        font-size: 18px !important;
+    }
+    div.chord div.container p {
+        font-size: 16px;
+    }
+    div.chord div.container p i {
+        margin-right: 10Px;
+    }
+    footer {
+        height: fit-content !important;
+    }
+    div.chord div.container span.common-chords span.major span, div.chord div.container span.common-chords span.minor span {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        /* Start Header */
+        header div.container nav {
+            flex-direction: row-reverse;
+            align-content: center;
+        }
+        header div.container .menu {
+            display: block;
+            width: 30px;
+            height: 50px;
+            background-color: transparent;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            cursor: pointer;
+            position: relative;
+            
+        }
+        header div.container .menu span {
+            width: 100%;
+            height: 3px;
+            margin-bottom : 5px;
+            background-color: #fff;
+            margin-right: auto;
+            margin-left: auto;
+           
+        }
+        div.virtual-metronome {
+            width: 80% !important;
+        }
+        header div.container img {
+            margin-right: auto;
+        }
+         header div.container ul {
+             background-color: #fff;
+             flex-direction: column;
+             opacity: 0.6;
+             margin: 0;
+            padding: 15px 15px;
+            align-items: center;
+            position: absolute;   
+            border-radius: 5px;
+            right:30px;
+            top: 100px;
+            display: none;
+            
+         }
+         header div.container ul li img{
+            display: none !important;
+            
+         }
+         header div.container ul li {
+            font-size: 20px !important;
+            letter-spacing: -1px !important;
+            margin-bottom: 15px;
+            color: #1E1E1E;
+            transition: 0.6s;
+         }
+         div.contact-us div.container input {
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: fit-content;
+         }
+         div.contact-us div.container input {
+             width: 100%;
+         }
+         div.contact-us div.container textarea {
+             width: fit-content;
+         }
+      
+   
+    div.metronome div.container h5 {
+        text-align: center;
+    }
+    div.metronome div.container p {
+        text-align: center;
+    }
+    div.virtual-metronome span.bpm span {
+        margin: auto;
+    }
+    section.piano div.container ul {
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    section.piano div.container ul li{
+        text-align: center;
+    }
+    div.contact-us div.container form {
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+    header div.container span.saying p:first-child {
+        font-size: 30px;
+        
+        
+    }
+    header div.container span.saying p:nth-child(2) {
+        font-size: 16px;
+        
+        
+    }
+    header div.container span.saying p:nth-child(2)::before {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color: var(--second-color);
+        position: absolute;
+        top: 10px;
+        left: -60px;
+        
+        
+    }
+    header div.container span.saying p:nth-child(2)::after {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color: var(--second-color);
+        position: absolute;
+        top: 10px;
+        right: -60px;
+        
+    }   
+}
+
+/* For Small Screen  */
+ @media   (min-width: 768px) and (max-width: 991px) {
+    div.container {
+        width: 750px;
+        
+    }
+    #myVideo {
+        display: none;
+    }
+    /* Start Header */
+    header div.container nav {
+        flex-direction: row-reverse;
+        align-content: center;
+    }
+    header div.container .menu {
+        display: block;
+        width: 30px;
+        height: 50px;
+        background-color: transparent;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        cursor: pointer;
+        position: relative;
+    }
+    header div.container .menu span {
+        width: 100%;
+        height: 3px;
+        margin-bottom : 5px;
+        background-color: #fff;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    header div.container img {
+        margin-right: auto;
+    }
+     header div.container ul {
+         background-color: #fff;
+         flex-direction: column;
+         opacity: 0.6;
+         margin: 0;
+        padding: 15px 15px;
+        align-items: center;
+        position: absolute;   
+        border-radius: 5px;
+        right:30px;
+        top: 100px;
+        display: none;
+     }
+     header div.container ul li img{
+        display: none !important;
+        
+     }
+     header div.container ul li {
+        font-size: 20px !important;
+        letter-spacing: -1px !important;
+        margin-bottom: 15px;
+        color: #1E1E1E;
+        
+     }
+     
+
+
+
+    /* End Header */
+    /* Start Learn */
+     .learn div.container .how {
+         flex-direction: column;
+         
+     }
+     .learn div.container .how div  {
+        width: 100% !important;
+        margin-bottom: 30px;
+        
+    }
+
+
+     /* End Learn */
+     /* Start Chords  */
+     .common-chords span ol {
+        font-size: 20px;
+     }
+     div.virtual-metronome {
+        width: 50%;
+
+     }
+     div.virtual-metronome button {
+        width: 200px;
+        height: 200px;
+     }
+     section.piano div.container div.virtual-piano {
+         width: 100%;
+         margin: 5Px auto;
+     }
+     section.piano div.container ul  {
+         margin: auto;
+        font-size: 25px;
+    }
+     section.piano div.container ul li {
+         font-size: 25px;
+     }
+     header div.container ul li a {
+        color: #262626;
+    }
+  
+} 
+/* 
+For Medium Screen  */
+ @media (min-width: 992px) {
+div.container {
+    width: 970px;
+}
+
+}  
+/* For Large Screen  */
+ @media (min-width: 1200px) {
+    div.container {
+        width: 1170px;
+    }  
+    header div.container ul {
+        display: flex;
+    }
+}
+
+ /* End Mediaquery */
+
+
+
+
+
+
+
+
+
+/* Start My Framwork */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section {
+    width: fit-content;
+    text-align: center;
+    font-family: '29LT Bukra';
+    padding: 10Px;
+    border: 4px solid #fff;
+    margin: 5px auto;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    user-select: none;
+    
+    
+}
+.title-section::before {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    left:-100%;
+    top: 0;
+    transition: 0.5s;
+    z-index: -1;
+  
+}
+.title-section::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    right:-100%;
+    top: 0;
+    transition: 0.5s;
+    z-index: -1;
+  
+}
+.title-section:hover {
+    border: 4px solid var(--main-color);
+    color: var(--main-color);
+}
+.title-section:hover::before {  
+    height: 40px;
+    left: -50%;  
+}
+.title-section:hover::after {  
+    height: 40px;
+    right: -50%;  
+}
+
+/* End My Framwork */
