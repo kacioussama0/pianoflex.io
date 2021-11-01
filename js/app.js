@@ -9,9 +9,13 @@ let saying = document.querySelector('#saying')
 let author = document.querySelector('#author');
 let copyied = document.querySelector('span.copyied');
 let btn = document.querySelector('#send');
-let div = document.querySelector('.default')
+let div = document.querySelector('.default');
+let img = document.querySelector("#myVideo");
 // End All Variables
-
+setInterval(()=> {
+    let imgArr = ['images/bg.png' , 'images/bg1.png' , 'images/bg2.png'];
+    img.src = imgArr[Math.floor(Math.random()* imgArr.length)];
+},10000)
 btn.addEventListener('click' , (event)=> {
     event.preventDefault();
     div.style.display = 'flex';
